@@ -1,6 +1,6 @@
 #include <stdio.h>              
 #include <conio.h>             
-void main()                        /
+void main()                        
 {
 	int a[10] ,n          
 	printf("\n\nEnter array size:");
