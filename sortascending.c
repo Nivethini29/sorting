@@ -1,6 +1,6 @@
 #include <stdio.h>              
 #include <conio.h>             
-int main()                        /
+void main()                        /
 {
 	int a[10] = { 3,4,7,6,5,1,2,8,10,9 };           
 	int n = 10;                                    
@@ -43,6 +43,5 @@ int main()                        /
 	{
 		printf(" %d ", a[i]);                   
 	}
-	getch();                                  
-	return 0;                                       
+	getch();                                                                         
 }
