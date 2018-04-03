@@ -1,33 +1,48 @@
-#include <stdio.h>
-#define MAX_SIZE 100  
-int main()
+#include <stdio.h>              
+#include <conio.h>             
+int main()                        /
 {
-    int arr[MAX_SIZE];
-    int size;
-    int i, j, temp;
-    printf("Enter size of array: ");
-    scanf("%d", &size);
-    printf("Enter elements in array: ");
-    for(i=0; i<size; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-    for(i=0; i<size; i++)
-    {        
-        for(j=i+1; j<size; j++)
-        { 
-            if(arr[i] > arr[j])
-            {
-                temp     = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-    }
-    printf("\nElements of array in ascending order: ");
-    for(i=0; i<size; i++)
-    {
-        printf("%d\t", arr[i]);
-    }
-    return 0;
+	int a[10] = { 3,4,7,6,5,1,2,8,10,9 };           
+	int n = 10;                                    
+	printf("\n\nArray Data : ");                   
+	for (int i = 0; i < n; i++)                     
+	{
+		printf(" %d ", a[i]);                   
+	}
+	for (int i = 0; i < n; i++)                     
+	{
+		for (int j = 0; j < n; j++)            
+		{
+			if (a[j] > a[i])                
+			{
+				int tmp = a[i];         
+				a[i] = a[j];            
+				a[j] = tmp;             
+			}  
+		}
+	}
+	printf("\n\nAscending : ");                    
+	for (int i = 0; i < n; i++)                    
+	{
+		printf(" %d ", a[i]);
+	}
+	for (int i = 0; i < n; i++)                     
+	{
+		for (int j = 0; j < n; j++)            
+		{
+			if (a[j] < a[i])               
+			{
+				int tmp = a[i];         
+				a[i] = a[j];            
+				a[j] = tmp;             
+			}
+		}
+	}
+	printf("\n\nDescending : ");                    
+	for (int i = 0; i < n; i++)                     
+	{
+		printf(" %d ", a[i]);                   
+	}
+	getch();                                  
+	return 0;                                       
 }
