@@ -2,12 +2,14 @@
 #include <conio.h>             
 void main()                        /
 {
-	int a[10] = { 3,4,7,6,5,1,2,8,10,9 };           
-	int n = 10;                                    
-	printf("\n\nArray Data : ");                   
+	int a[10] ,n          
+	printf("\n\nEnter array size:");
+	scanf("%d",&n);
+	
+	printf("\n\nArray elements: ");                   
 	for (int i = 0; i < n; i++)                     
 	{
-		printf(" %d ", a[i]);                   
+		scanf(" %d",&a[i]);                   
 	}
 	for (int i = 0; i < n; i++)                     
 	{
